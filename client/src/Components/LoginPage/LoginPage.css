@@ -1,0 +1,73 @@
+.login-container {
+  max-width: 350px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(11, 10, 10, 0.997);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.btn-login {
+  background-color: #DD5D20;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+.btn-login:hover {
+  background-color: #5d6b7a;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #DD5D20;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #0c3565;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #DD5D20 ;
+}

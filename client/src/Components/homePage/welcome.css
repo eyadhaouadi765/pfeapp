@@ -1,0 +1,38 @@
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 70%;
+}
+
+.welcome-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.welcome-box h1 {
+  color: white;
+  font-size: 40px;
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.welcome-box h4 {
+  color: white;
+  font-size: 2.1rem;
+  font-weight: lighter;
+}
+
+.welcome-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
