@@ -13,7 +13,7 @@ app.use(cors());
 //our routes
 
 app.use("/user", require("./routes/userRoute"));
-
+app.use("/auth", require("./routes/authRoute"));
 
 //get port from .env
 PORT = process.env.PORT;
@@ -22,6 +22,3 @@ PORT = process.env.PORT;
 app.listen(PORT, (err) =>
   err ? console.log(err) : console.log("server is running")
 );
-//hazem
-//eya
-// /helooooooooooooooo
