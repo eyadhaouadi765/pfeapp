@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const db_connect = require("./config/db_connect");
 require("dotenv").config();
+const User = require('./models/user')
 const app = express();
 
 //connect to database
@@ -14,6 +15,11 @@ app.use(cors());
 
 app.use("/user", require("./routes/userRoute"));
 
+app.post('/signup',(req,res)=>{
+  User.create(req.body)
+  .then(users => res.json(users))
+  .catch(err => res.json(err))
+})
 
 //get port from .env
 PORT = process.env.PORT;
@@ -22,6 +28,3 @@ PORT = process.env.PORT;
 app.listen(PORT, (err) =>
   err ? console.log(err) : console.log("server is running")
 );
-//hazem
-//eya
-// /helooooooooooooooo

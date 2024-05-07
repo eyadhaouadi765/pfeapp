@@ -10,7 +10,8 @@ import {
 import LoginPage from './Components/LoginPage/LoginPage';
 import HomePage from './Components/homePage/HomePage';
 import SignUpPage from './Components/SignUpPage/SignUpPage';
-import WelcomePage from './Components/homePage/Welcome';
+import Formations from './Components/homePage/Welcome';
+import AboutPage from './pages/AboutPage';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,12 +27,16 @@ const router = createBrowserRouter([
   },
   {
     path: "Signup",
-    element:  <SignUpPage />,
+    element: <SignUpPage />,
   },
-   {
-    path: '/welcome', // Ajoutez un nouveau chemin pour la page WelcomePage
-    element: <WelcomePage />,
-   },
+  {
+    path: "About",
+    element: <AboutPage />,
+  },
+  {
+    path: "/Formations", // Ajoutez un nouveau chemin pour la page WelcomePage
+    element: <Formations />,
+  },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
